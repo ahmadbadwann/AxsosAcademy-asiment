@@ -13,27 +13,34 @@
     height: 300px;
     width: 200px;
     background-color: blue;
+    margin: 6px;
+    
 }
 .main {
     height: 400px;
     width: 700px;
     background-color: red;
-    padding: 20px;
-
+    padding: 10px;
+    margin: 6px;
 }
 .sup-content {
     height: 200px;
     width: 210px;
     background-color: yellow;
+    margin: 5px;
+
+
 }
 #advertisement {
         height: 120px;
         width: 660px;
         background-color: purple;
+        margin: 5px;
     }
     .side-nav ,.main{
         display: inline-block;
         vertical-align: top;
+        margin-top: 20px;
     }
     .sup-content{
         display: inline-block;
