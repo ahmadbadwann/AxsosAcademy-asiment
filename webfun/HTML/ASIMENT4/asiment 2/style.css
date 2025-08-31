@@ -1,0 +1,36 @@
+*{
+    margin: 5px;
+}
+#search{
+    border-radius: 50px;
+    background-color: #ffffff;
+    border-color: #00d1b2;
+    font-size: 15px;
+    color: #00d1b2;
+    width: 140px;
+    height: 30px;
+    
+}
+#plus{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #00d1b2;
+    border-color: #00d1b2;
+    color: #fff;
+    font-size: 25px;
+}
+#c-a{
+    color: #fff;
+    background-color: #2b78e4;
+    border-color: black;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, 9);
+}
+
+
+
+
+
