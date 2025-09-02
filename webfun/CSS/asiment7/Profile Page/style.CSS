@@ -1,0 +1,208 @@
+.nav{
+    display: flex;
+    background-color: #000000;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+}
+.nav-title{
+    margin-left: 20px;
+}
+.nav-links{
+    display: flex; 
+    margin-right: 20px;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-links  li a{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    height: 30px;
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: black;
+    box-shadow: 2px 4px 1px 1px black;
+}
+.labl-links{
+    display: flex;
+}
+.user-card{
+    position: relative;
+    border: 1px solid gray;
+    width: 450px;
+    height: 310px;
+}
+.blue-div{
+    height: 100px;
+    background-color: rgb(23, 162, 188);
+}
+.contener{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.user-profile-img{
+    height: 80px;
+    width: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 56px;
+}
+.user-card-icon{
+    width: 10px;
+    
+}
+.ditals-div{
+    margin: 0 0 0 20px;
+    padding-top: 20px;
+}
+a{
+    color: rgb(8, 130, 229);
+}
+
+.educadtion{
+    border: 1px solid gray;
+    width: 450px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.education-title{
+    padding: 0;
+    margin: 0;
+    background-color: #363434;
+    height: 20%;
+    color: white;
+    font-size: 16px;
+    padding: 3px 0 0 20px;
+}
+
+.education-details{
+    padding: 0 0 0 20px;
+}
+
+.coding-dojo{
+    font-weight: bold;
+}
+
+.education-date{
+    color: gray;
+    font-size: 15px
+}
+
+.education-languages{
+    font-size: 15px
+}
+.connection-requests{
+    border: 1px solid gray;
+    width: 225px;
+    height: 140px;
+    
+}
+.connection-requests-title{
+    padding: 0;
+    margin: 0;
+    background-color: #363434;
+    height: 25%;
+    color: white;
+    font-size: 16px;
+    padding: 4px 0px 0px 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.connection-requests-title-num h3{
+    margin: 0;
+    padding: 0;
+    margin: 2px 0px 0px 7px;
+    font-size: 15px;
+    color: #000000;
+}
+.connection-requests-title-num{
+    background-color: #cfcfcf;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 4px 0px 0 0;
+}
+.connection-requests-show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img{
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.conniction-user{
+    display: flex;
+    align-items: center;
+}
+
+.coniction-user-image{
+    margin-right: 10px;
+}
+
+.connection-your{
+    margin-left: 20px;
+}
+
+.your-requests{
+    width: 225px;
+    height: 280px;
+    border: 1px solid gray;
+    margin: 10px 0 0 0;
+}
+
+.your-connections-header{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background-color: #363434;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.number-of-ypur-conniction{
+    width: 50px;
+    height: 20px;
+    background-color: #CFCFCF;
+    border-radius: 50%;
+    text-align: center;
+}
+.your-requests-title{
+    color: #fff;
+    margin: 0 0 0 10px;
+    font-size: 16px;
+}
+
+.your-conniction-users{
+    padding-left: 10px;
+}
+
+.view-more{
+    height: 40px;
+    border-top: 2px solid gray;
+    padding-top: 10px;
+}
+
+.view-more-link{
+    margin: 0 0 0 10px;
+    color: #466EA2;
+}

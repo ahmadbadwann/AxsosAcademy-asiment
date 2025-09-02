@@ -1,0 +1,39 @@
+.contener{
+    border: 1px solid gray;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    margin-left: 350px;
+}
+.blo-bar{
+    width: 400px;
+    height: 100px;
+    background-color: aqua;
+}
+.img-profil{
+    border: 1px solid gray;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+.img-profil img{
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    margin-top: 1px;
+    padding-left: 1px;
+}
+.detals{
+    padding: 20px 10px 0px 20px;
+}
+.detals p img{
+    width: 10px;
+    margin-right: 5px;
+}
+.detals a img{
+    width: 10px;
+    margin-right: 5px;
+}
