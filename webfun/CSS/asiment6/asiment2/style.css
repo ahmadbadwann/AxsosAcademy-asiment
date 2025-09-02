@@ -1,0 +1,44 @@
+img{
+    height: 200px;
+}
+.container{
+    background-color: #e5e6eb;
+}
+.top-nav{
+    color: #515186;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100px;
+    
+}
+.row-1{
+    display: flex;
+    justify-content: space-around;
+    background-color: #5dc8d5;
+    padding: 15px;
+    margin: 0px 15px 15px ;
+}
+.row-2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #cca8b9;
+    padding: 15px 100px ;
+    margin: 15px;
+}
+.row-3{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px;
+}
+.futter{
+    display: flex;
+    justify-content: center;
+    color: #858988;
+}
+.futter h4 a{
+    color: rgb(89, 226, 226);
+}
