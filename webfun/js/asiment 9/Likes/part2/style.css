@@ -1,0 +1,47 @@
+h1{
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+}
+h2{
+    text-align: center;
+}
+.profil{
+    display: flex;
+    justify-content: center;
+}
+.profilImg-name img{
+    display: block;
+}
+.profilImg-name{
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+}
+.posts{
+    margin: 10px;
+}
+
+.post{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.name-like{
+    display: flex;
+    justify-content: space-between;
+}
+.like{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.like button{
+    background-color: yellow;
+    height: 30px;
+    width: 60px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+}

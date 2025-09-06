@@ -1,0 +1,23 @@
+.likesBox{
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.info output{
+    margin-top: 20px;
+}
+button{
+    width: 70px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: yellow;
+    box-shadow: 1px 1px 1px 1px black;
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+}

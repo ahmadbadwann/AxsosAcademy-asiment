@@ -1,0 +1,71 @@
+.contener{
+    margin: 0px 50px;
+}
+.hheder{
+    height: 10px;
+    background-color: blueviolet;
+}
+.heder{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.heder h1{
+    margin-left: 20px;
+    color: white;
+}
+.heder input{
+    width: 500px;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.heder button{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: blueviolet;
+    color: white;
+    margin: 18px 20px 0px 0px;
+}
+video{
+    width: 100%;
+    height: 400px;
+}
+.titel-subscribe{
+    display: flex;
+    justify-content: space-between;
+}
+.chanel{
+    color: blueviolet;
+}
+.titel-subscribe button{
+    height: 30px;
+    width: 110px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px 2px black;
+}
+.video-upnext{
+    display: flex;
+    margin-top: 25px;
+}
+.video{
+    flex: 2;
+    margin-right: 10px;
+}
+.upnext{
+    flex: 1;
+    margin-left: 10px;
+}
+.anthervideo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.anthervideo img{
+    height: 80px;
+}

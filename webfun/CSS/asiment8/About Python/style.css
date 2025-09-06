@@ -1,0 +1,108 @@
+.contaner{
+    background-color: #245075;
+    width: 1250px;
+    height: 1000px;
+}
+.hedar{
+    display: flex;
+    justify-content: space-between;
+}
+.textsize-search{
+    color: aliceblue;
+}
+.search{
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    
+}
+.search input{
+    text-align: center;
+}
+.textsize-search p{
+    margin-left: 60px;
+}
+.textsize-search a{
+    color: yellow;
+}
+.search button{
+    background-color: #245075;
+    color: aliceblue;
+    border: 1px solid wheat;
+    border-radius: 3px;
+}
+.nav-par{
+    margin-left: 110px;
+}
+.nav-par ul{
+    height: 40px;
+    width: 1000px;
+    background-color: #457eac;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    
+}
+.nav-par ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-par ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.main-rigt .p-wihet{
+color: aliceblue;
+}
+.main-rigt .p-yalo{
+    color: yellow;
+    font-size: 20px;
+}
+.main-lift ul li a{
+    color: white;
+}
+.main-lift ul li{
+    margin: 20px;
+}
+.main-lift ul{
+    list-style-type: none;
+}
+.getStart-applecation{
+    background-color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.getStarted{
+    text-align: center;
+}
+.applications{
+    text-align: center;
+}
+.getStarted hr{
+    height: 5px;
+    background-color: #245075;
+}
+.applications hr{
+    height: 5px;
+    background-color: #245075;
+}
+.getStarted ul li{
+    color: #245075;
+}
+.applications ul li{
+    color: #245075;
+}
+#pythonpacket{
+    color: #245075;
+}

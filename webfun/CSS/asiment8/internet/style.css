@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 970px;
+    margin-left: 25%;
+}
+.log{
+    display: flex;
+}
+.log h1{
+    margin-top: 20px;
+}
+.log h1 span{
+    color: #23649d;
+}
+.log img{
+height: 70px;
+margin-left: 10px;
+}
+.title{
+    background-color: #23649d;
+    color: white;
+    height: 40px;
+    padding: 5px 0px 0px 20px;
+    margin: -10px;
+}
+.whatInternet{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.red{
+    color: red;
+}
+.color-blo{
+    color: #23649d;
+}
+.WATCH-VIDEO{
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #23649d;
+}
+.more-resource{
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #f8a430;
+}
+.left-side hr{
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 200px;
+}
+.advertisement{
+    background-image: url(img/ad_background.png);
+    width: 170px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.advertisement img{
+    width: 70px;
+    display: block;
+    margin: 10px 60px;
+}
+.advertisement button{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #00c2dd;
+}
+.contener{
+    display: flex;
+}
+.righet-side{
+    margin-top: 10px;
+    margin-left: 25px;
+    flex: 3;
+    margin-right: 10px;
+}
+.left-side{
+    margin-right: 25px;
+    flex: 1;
+}
+.left{
+    display: flex;
+}
+.left img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+.left p{
+    margin-top: 10px;
+}
+.righet{
+    display: flex;
+}
+.righet p{
+    font-size: 10px;
+    color: gray;
+    text-align: center;
+}
+.righet img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.color-sky{
+    color: #08ace1;
+}
+.hid{
+    display: flex;
+    justify-content: space-between;
+}
+.righet-side hr{
+    margin-top: 20px;
+}
+.righet-side ul{
+    margin-left: 25px;
+}
+.client-server{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.soWhat{
+    list-style-type: none;
+}
+.the-big3 img{
+    width: 80px;
+}
+.the-big3{
+    display: flex;
+    border: 5px solid #23649d;
+    padding: 10px;
+    margin-top: 15px;
+}
+.paragraf{
+    margin-left: 15px;
+}
