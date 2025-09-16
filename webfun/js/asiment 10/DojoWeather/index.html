@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dogo Weather</h1>
+        <ul>
+            <li><a href="" onclick="alarrt()">Burbank</a></li>
+            <li><a href="">Chicago</a></li>
+            <li><a href="">Dallas</a></li>
+        </ul>
+    </header>
+    <div class="title">
+        <h2>San Joze</h2>
+        <divs class="show-temp">
+            <p>show temperature in</p>
+            <select id="se" name="country" onchange="changtoforc(this)">
+                <option value="c">C</option>
+                <option value="f">F</option>
+            </select>
+        </divs>
+    </div>
+    <hr>
+    <div class="mad">
+        <div class="main">
+            <h2>Today</h2>
+            <img src="img/some_rain.png" alt="icon">
+            <h4>some rain</h4>
+            <div class="o">
+                <h3  class="red-color">24</h3>
+                <h3  class="blo-color">18</h3>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Tomorrow</h2>
+            <img src="img/some_sun.png" alt="icon">
+            <h4>some rain</h4>
+            <div class="o">
+                <h3 id="b" class="red-color">27</h3>
+                <h3 id="f" class="blo-color">19</h3>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Friday</h2>
+            <img src="img/some_clouds.png" alt="icon">
+            <h4>some rain</h4>
+            <div class="o">
+                <h3 id="c" class="red-color">21</h3>
+                <h3 id="g" class="blo-color">16</h3>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Saturday</h2>
+            <img src="img/some_sun.png" alt="icon">
+            <h4>some rain</h4>
+            <div class="o">
+                <h3 id="d" class="red-color">26</h3>
+                <h3 id="h" class="blo-color">21</h3>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="img-st">
+            <img src="img/cookie.png" alt="icon">
+            <div class="stoo-cookie">
+                <h2>Stop! Cookis time</h2>
+                <p>We use cookies ( sadly not the edible ones ) to personalize
+                content and ods <br> to provide social mwdia features and to 
+                analyse our traffic.<a href="">Read more.</a></p>
+            </div>
+        </div>
+        <button onclick="deletee(this)">I Accept</button>
+    </div>
+</body>
+</html>

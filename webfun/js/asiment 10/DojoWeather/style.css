@@ -1,0 +1,108 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #9fc5f8;
+    align-items: center;
+    margin: 0 auto;
+}
+header h1{
+    flex: 2;
+    margin-left: 25px;
+    color: white;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    
+}
+header ul li{
+    list-style-type: none;
+}
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.show-temp{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+#country{
+    width: 30px;
+    height: 20px;
+    margin-top: 15px;
+}
+.main{
+    width: 200px;
+    height: 350px;
+    background-color: rgb(215, 215, 215);
+}
+.o{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img{
+    width: 150px;
+    margin: 0 25px;
+    border-radius: 50%;
+}
+.main h2{
+    text-align: center;
+    padding-top: 10px;
+}
+.main h4{
+    text-align: center;
+}
+.mad{
+    display: flex;
+    justify-content: space-between;
+}
+.blo-color{
+    color: #2b78e4;
+}
+.red-color{
+    color: red;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 0px 20px;
+}
+.img-st{
+    display: flex;
+}
+.footer img{
+    height: 60px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.footer button{
+    background-color: #9fc5f8;
+    width: 100px;
+    height: 30px;
+    box-shadow: 1px 1px 1px 1px;
+}
+#se{
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+
