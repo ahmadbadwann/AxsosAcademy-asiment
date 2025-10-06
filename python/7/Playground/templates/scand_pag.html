@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='scand_pag.css') }}">
+</head>
+<body>
+    <div class="contener">
+        <h1>hallo world!</h1>
+            <div class="boxs" >
+            {% for i in range(x) %}
+                <div  class="box"></div> 
+            {% endfor %}
+        </div>
+    </div>
+
+    
+    <!-- style="background-color: {{box_color}};" -->
+</body>
+
+    <style>
+        .box{
+            background-color: {{ box_color }};
+        }
+    </style>
+
+</html>

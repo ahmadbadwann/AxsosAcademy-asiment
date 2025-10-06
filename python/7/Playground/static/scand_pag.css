@@ -1,0 +1,19 @@
+.contener{
+    width: 1000px;
+    height: 10000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'info_style.css' %}">
+</head>
+<body>
+        <div class="contener">
+            <div class="name">
+                <label for="">Your Name</label>
+                <p>{{username}}</p>
+            </div>
+            <div class="loca">
+                <label for="">dogo location</label>
+                <p>{{dogolocation}}</p>
+            </div>
+            <div class="lang">
+                <label for="">Favorite language</label>
+                <p>{{favotite_language}}</p>
+            </div><div class="comment">
+                <label for="">comment (optional)</label>
+                <p>{{comment}}</p>
+            </div>
+            <form action="/" method="get">
+                <button type="submit">Go back</button>
+            </form>
+            
+        </div>
+</body>
+</html>

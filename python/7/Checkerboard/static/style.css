@@ -1,0 +1,9 @@
+.contener{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    border: 3px solid black;
+}
+div{
+    width: 100px;
+}

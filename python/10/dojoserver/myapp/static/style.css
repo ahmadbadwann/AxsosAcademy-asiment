@@ -1,0 +1,52 @@
+.contener{
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 25px;
+    width: 500px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.name input{
+    width: 175px;
+    height: 25px;
+    text-align: center;
+}
+.loca select{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+.loca{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.lang select{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+.lang{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.comment{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.comment input{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(12, 158, 255);
+    color: white;
+}

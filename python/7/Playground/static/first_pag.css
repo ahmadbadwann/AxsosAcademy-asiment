@@ -1,0 +1,17 @@
+
+.contener{
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.boxs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
