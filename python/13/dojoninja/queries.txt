@@ -1,0 +1,25 @@
+from dojo_ninjas_app.models import *
+Dojo.objects.create(name="Dojo1", city="Nablus", state="PS")
+Dojo.objects.create(name="Dojo2", city="Jerusalem", state="PS")
+Dojo.objects.create(name="Dojo3", city="Hebron", state="PS")
+Dojo.objects.all().delete()
+dojo1 = Dojo.objects.create(name="Coding Dojo", city="Ramallah", state="PS")
+dojo2 = Dojo.objects.create(name="Python Dojo", city="Tulkarm", state="PS")
+dojo3 = Dojo.objects.create(name="AI Dojo", city="Gaza", state="PS")
+Ninjas.objects.create(first_name="Ali", last_name="Ahmad", dojo=dojo1)
+Ninjas.objects.create(first_name="Sara", last_name="Hassan", dojo=dojo1)
+Ninjas.objects.create(first_name="Yousef", last_name="Omar", dojo=dojo1)
+Ninjas.objects.create(first_name="Lina", last_name="Saleh", dojo=dojo2)
+Ninjas.objects.create(first_name="Hadi", last_name="Ayman", dojo=dojo2)
+Ninjas.objects.create(first_name="Mona", last_name="Ali", dojo=dojo2)
+Ninjas.objects.create(first_name="Ahmad", last_name="Nour", dojo=dojo3)
+Ninjas.objects.create(first_name="Ola", last_name="Khaled", dojo=dojo3)
+Ninjas.objects.create(first_name="Maher", last_name="Samir", dojo=dojo3)
+dojo1.ninjas.all()
+dojo3.ninjas.all()
+last_ninja = Ninja.objects.last()
+last_ninja.dojo
+desc = models.TextField(default="old dojo")
+python manage.py makemigrations
+python manage.py migrate
+Dojo.objects.create(name="New Dojo", city="Jenin", state="PS", desc="New awesome dojo")
