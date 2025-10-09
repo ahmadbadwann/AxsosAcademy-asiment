@@ -1,0 +1,47 @@
+>>> this_book=Books.objects.get(title="C Sharp")
+>>> this_book.title="C#"
+>>> this_book.save()
+-----------------------------------------------------------
+>>> this_author=Authors.objects.get(id=3)
+>>> this_author.first_name="bill"
+>>> this_author.save()
+-----------------------------------------------------------
+ books1=Books.objects.get(id=1)
+>>> books2=Books.objects.get(id=2)
+this_author=Authors.objects.get(id=1)
+-----------------------------------------------------------
+>>> this_author2=Authors.objects.get(id=2)
+>>> books1.authors.add(this_author)
+>>> books2.authors.add(this_author)
+-----------------------------------------------------------
+author2 = Authors.objects.get(id=2)
+books_first_3 = Books.objects.all()[:3]
+author2.books_authors.set(books_first_3)  // (set override the previous list)
+-----------------------------------------------------------
+author3 = Authors.objects.get(id=3)
+books_first_4 = Books.objects.all()[:4]
+author3.books_authors.add(*books_first_4)  // second method using * this will not override the previous list
+----------------------------------------------------------
+author4 = Authors.objects.get(id=4)
+all_books = Books.objects.all()
+author4.books_authors.set(all_books)
+----------------------------------------------------------
+>>> book3 = Books.objects.get(id=3)         
+>>> authors = book3.authors.all()
+>>> print(authors)
+----------------------------------------------------------
+>>> book3 = Books.objects.get(id=3)         
+>>> author1 = Authors.objects.get(id=1)
+>>> book3.authors.remove(author1)
+----------------------------------------------------------
+book2 = Books.objects.get(id=2)
+author5 = Authors.objects.get(id=5)
+book2.authors.add(author5) // to not override the previous list 
+---------------------------------------------------------
+author3 = Author.objects.get(id=3)         
+>>> books = author3.books_authors.all()
+>>> print(books)
+---------------------------------------------------------
+>>> book5 = Books.objects.get(id=5)         
+>>> authors = book5.authors.all()
+>>> print(authors)
