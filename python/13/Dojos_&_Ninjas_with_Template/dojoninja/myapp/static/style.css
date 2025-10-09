@@ -1,0 +1,41 @@
+.contener{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+}
+.dojo{
+    height: 250px;
+    width: 300px;
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.dojo div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+button{
+    width: 60px;
+    height: 40px;
+}
+.ninja{
+    height: 250px;
+    width: 300px;
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.ninja div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.ninja select{
+    width: 180px;
+}
+#submit_ninja{
+    width: 60px;
+    height: 40px;
+}
