@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 25px;
+}
+.Registration{
+    width: 300px;
+}
+.Registration div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.Registration input{
+    margin-top: 10px;
+}
+.login{
+    width: 300px;
+}
+.login div{
+    display: flex;
+    justify-content: space-between;
+        margin-top: 10px;
+}
+.login input{
+    margin-top: 10px;
+}
