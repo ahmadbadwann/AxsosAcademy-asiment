@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'allshows.css' %}">
+</head>
+<body>
+    <div class="head">
+        <h1>All Shows</h1>
+    </div>
+    <table border=1>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>network</th>
+            <th>release date</th>
+            <th>actions</th>
+        </tr>
+        {% for get_all_show in get_all_shows %}
+        <tr>
+            <td>{{get_all_show.id}}</td>
+            <td>{{get_all_show.title}}</td>
+            <td>{{get_all_show.network}}</td>
+            <td>{{get_all_show.release_date}}</td>
+            <td><a href="/show/{{get_all_show.id}}">Show</a> | <a href="show/{{get_all_show.id}}/edit">Edit</a> | <a href="delete/{{get_all_show.id}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="a">
+        <a href="new">Add a New Show</a>
+    </div>
+</body>
+</html>

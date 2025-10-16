@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(128, 255, 0);
+}
+.navbar h1{
+    margin-left: 25px;
+}
+.navbar div{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.post_a_message{
+    text-align: center;
+}
+.post_a_message .input{
+    display: block;
+    width: 70%;
+    height: 60px;
+    margin-left: 15%;
+    border: 3px solid black;
+}
+#submit{
+    height: 30px;
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+    border: 3px solid black;
+}

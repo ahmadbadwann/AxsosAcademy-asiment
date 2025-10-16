@@ -1,0 +1,22 @@
+body{
+    margin: 5%;
+}
+.add_new_course{
+    width: 50%;
+}
+.add_new_course #name{
+    margin-top: 15px;
+    width: 70%;
+}
+.add_new_course #desc{
+    margin-top: 15px;
+    width: 70%;
+    height: 60px;
+}
+.add_new_course div{
+    display: flex;
+    justify-content: space-between;
+}
+.courses table{
+    width: 100%;
+}

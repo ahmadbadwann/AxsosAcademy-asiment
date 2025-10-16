@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="head">
-        <h1>add a new show</h1>
+        <h1>Edit show  {{edit.id}}</h1>
         <a href="/">go back</a>
     </div>
-    <form action="add_anew_show" method="POST">
+    <form action="/show/{{edit.id}}/update_show" method="POST">
         {% csrf_token %}
-        <div class="title"></div>
+        <div class="title">
             <label class="title_lanel" for="">Title</label>
             <input type="text" name="title" id="">
         </div>
@@ -33,15 +33,17 @@
             <input type="text" name="desc" id="">
         </div>
         <div class="submit">
-            <input type="submit" value="Create" name="" id="">
+            <input type="hidden" name="id" value="{{edit.id}}">
+            <input type="submit" value="Update" name="" id="submitt">
+            <a href="/">Go to Show</a>
         </div>
-        {% if messages %}
+    </form>
+     {% if messages %}
         <ul class="messages">    
             {% for message in messages %}    
                 <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
             {% endfor %}
         </ul>
         {% endif %}
-    </form>
 </body>
 </html>

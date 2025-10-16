@@ -1,0 +1,42 @@
+body{
+    width: 60%;
+    height: 100px;
+    margin-left: 20%;
+}
+body label{
+    margin-top: 10px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_lanel{
+    display: block;
+}
+.title input{
+    width: 100%;
+    height: 20px;
+}
+.network_releasedate{
+    display: flex;
+    justify-content: space-between;
+}
+.network_releasedate label{
+    display: block;
+}
+.description label{
+    display: block;
+}
+.description input{
+    width: 100%;
+    height: 40px;
+}
+.submit{
+    text-align: center;
+    margin-top: 10px;
+}
+#submitt{
+    display: block;
+}

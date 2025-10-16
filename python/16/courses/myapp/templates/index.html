@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static  'style.css' %}">
+</head>
+<body>
+    <div class="add_new_course">
+        <form action="cereat_course" method="POST">
+            {% csrf_token %}
+        <h1>Add a new course</h1>
+        <div class="name">
+            <label for="" >name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="desc">
+            <label for="">description</label>
+            <input type="text" name="desc" id="desc">
+        </div>
+        <input type="submit" name="submit" id="">
+        </form>
+        {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+
+    <div class="courses">
+        <h1>courses</h1>
+        <table border="1">
+            <tr>
+                <th>corse name</th>
+                <th>description</th>
+                <th>date added</th>
+                <th>actions</th>
+            </tr>
+            {% for get_all in get_alls %}
+            <tr>
+                <td>{{get_all.name}}</td>
+                <td>{{get_all.descrption}}</td>
+                <td>{{get_all.created_at}}</td>
+                <td><a href="remov/{{get_all.id}}">remove</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
