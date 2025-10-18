@@ -1,0 +1,17 @@
+body{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.regeisteration div{
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.log_in div{
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

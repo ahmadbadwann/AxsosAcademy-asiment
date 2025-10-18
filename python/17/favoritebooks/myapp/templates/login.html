@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <div class="regeisteration">
+        <form action="regeisteration" method="POST">
+            {% csrf_token %}
+            <h1>regeisteration</h1>
+            <div>
+                <label for="">first name</label>
+                <input type="text" name="first_name" id="">
+            </div>
+            <div>
+                <label for="">last name</label>
+                <input type="text" name="last_name" id="">
+            </div>
+            <div>
+                <label for="">email</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div>
+                <label for="">password</label>
+                <input type="password" name="password" id="">
+            </div>
+            <div>
+                <label for="">confirm pw</label>
+                <input type="password" name="confirm_pw" id="">
+            </div>
+            <div class="submit">
+                <input type="submit" value="regeisteration" name="submit" id="">
+            </div>
+        </form>
+    </div>
+    <div class="log_in">
+        <form action="log_in" method="POST">
+            {% csrf_token %}
+            <h1>log in</h1>
+            <div>
+                <label for="">email</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div>
+                <label for="">password</label>
+                <input type="password" name="password" id="">
+            </div>
+            <div>
+                <input type="submit" value="log in" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

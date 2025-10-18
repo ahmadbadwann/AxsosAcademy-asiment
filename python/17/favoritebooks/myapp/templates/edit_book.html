@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'edit_book.css' %}">
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome,{{user.first_name}}</h1>
+        <a href="/add_favorit_booke">log out</a>
+    </div>
+    <div class="main">
+        <div class="edit">
+        <form action="/update" method="POST">
+            {% csrf_token %}
+            <input type="text" name="title" value="{{book.title}}" id="">
+            <h3>added by :{{book.uploaded_by.first_name}} </h3>
+            <h3>added on:{{book.created_at}}</h3>
+            <h3>last update on :{{book.updated_at}}</h3>
+            <div>
+                <label for="">discription</label>
+                <input type="text" name="disc" id="">
+            </div>
+            <div class="input">
+                <input type="hidden" value="{{book.id}}" name="bookid" id="">
+                <input type="submit" value="update">
+        </form>
+                <form action="/delete" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{book.id}}" name="bookid" id="">
+                    <input type="submit" value="delete">
+                </form>
+            </div>
+        </div>
+        <div class="likes">
+            <h3>Users who like this book:</h3>
+            <ul>
+            {% for liker in likers %}
+                <li>{{ liker.first_name }}</li>
+            {% empty %}
+                <li>No likes yet.</li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

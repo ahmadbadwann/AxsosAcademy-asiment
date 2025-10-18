@@ -1,0 +1,16 @@
+body{
+    margin: 5%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    margin-top: 25px;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'book.css' %}">
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome,{{log_in_user.first_name}} </h1>
+        <a href="/">log out</a>
+</div>
+    <div class="mian">
+    <div class="add_book">
+    <form action="add_favorit_booke" method="POST">
+        {% csrf_token %}
+        <h1>add a favorit book</h1>
+        <div>
+            <label for="">title</label>
+            <input type="text" name="title" >
+        </div>
+        <div>
+            <label for="">descrption</label>
+            <input type="text" name="desc" >
+        </div>
+        <div>
+            <input type="hidden" name="id" value="{{log_in_user.id}}" id="">
+            <input type="submit" name="submit" value="add" id="">
+        </div>
+    </form>
+    <div class="books-container">
+        {% for all_book in all_books %}
+            <div class="book-card">
+                {% if all_book.uploaded_by.id == log_in_user.id %}
+                    <a href="/edit_book/{{ all_book.id }}/{{ log_in_user.id }}">{{ all_book.title }}</a>
+                {% else %}
+                    <a href="/view_book/{{ all_book.id }}/{{ log_in_user.id }}">{{ all_book.title }}</a>
+                {% endif %}
+                <p>(added by {{ all_book.uploaded_by.first_name }})</p>
+                {% if log_in_user in all_book.user_who_likes.all %}
+                    <p>This is one of your favorites </p>
+                {% else %}
+                    <form action="/like_book" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="bookid" value="{{ all_book.id }}">
+                        <input type="hidden" name="userid" value="{{ log_in_user.id }}">
+                        <input type="submit" value="Add to favorites">
+                    </form>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

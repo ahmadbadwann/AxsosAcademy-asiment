@@ -1,0 +1,31 @@
+body{
+    margin: 5%;
+}
+.mian{
+    display: flex;
+    justify-content: space-between;
+}
+.add_book div{
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+}
