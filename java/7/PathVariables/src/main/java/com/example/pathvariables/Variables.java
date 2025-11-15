@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/batata")
 public class Variables {
     @RequestMapping("/travel/{city}")
     public String var1(@PathVariable("city") String city){

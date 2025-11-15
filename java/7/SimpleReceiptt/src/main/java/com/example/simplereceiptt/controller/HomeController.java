@@ -12,7 +12,7 @@ public class HomeController {
 
         String name = "Alan Turing";
         String itemName = "Silver Cable";
-        double price = 7.99;
+        double price = 7.99; 
         String description = "High-quality metal wire used for experiments.";
         String vendor = "Tech Supplies Store";
 
