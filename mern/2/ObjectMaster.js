@@ -1,4 +1,4 @@
-const pokemon = Object.freeze([
+const pokémon = Object.freeze([
     { id: 1, name: "Bulbasaur", types: ["poison", "grass"] },
     { id: 5, name: "Charmeleon", types: ["fire"] },
     { id: 9, name: "Blastoise", types: ["water"] },
@@ -25,6 +25,21 @@ const pokemon = Object.freeze([
 ]);
 
 
-const bListPkmn = pokemon.filter(p => p.name[0] === "B");
+const bListPkmn = pokémon.filter(p => p.name[0] === "B");
 
 const pkmnIds = pokémon.map(p => p.id);
+const divisibleBy3 = pokémon.filter(p => p.id % 3 === 0);
+
+const fireType = pokémon.filter(p => p.types.includes("fire"));
+
+const multipleTypes = pokémon.filter(p => p.types.length > 1);
+
+const names = pokémon.map(p => p.name);
+
+const namesOver99 = pokémon.filter(p => p.id > 99).map(p => p.name);
+
+const onlyPoison = pokémon.filter(p => p.types.length === 1 && p.types[0] === "poison").map(p => p.name);
+
+const firstTypesOfFlying = pokémon.filter(p => p.types[1] === "flying").map(p => p.types[0]);
+
+const normalCount = pokémon.filter(p => p.types.includes("normal")).length;
