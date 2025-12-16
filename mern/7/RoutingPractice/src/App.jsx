@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/Home'element={<Home/>} />
+        <Route path='/home'element={<Home/>} />
         <Route path='/:word' element={<Word/>}/>
         <Route path='/:word/:colerB/:colerA' element={<WordColer/>}/>
       </Routes>
